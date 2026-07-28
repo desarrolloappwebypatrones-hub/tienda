@@ -17,13 +17,15 @@
     <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>    
     <script th.src="@{/js/rutinas.js}"></script>
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
 
     <link th:href="@{/css/estilos.css}" rel="stylesheet"/>
 
 </head>
 
 
-<!-- Fragmento #2  define el encabezado de las páginas, en concreto el menú y enlaces rápidos -->
+<!-- Fragmento #2  define el encabezado de las pá ginas, en concreto el menú y enlaces rápidos -->
 <header th:fragment="header" class="header">
     <nav class="navbar navbar-expand-sm p-0">
         <div class="container">                    
