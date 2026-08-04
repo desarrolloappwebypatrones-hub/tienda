@@ -3,6 +3,7 @@
  * @param {HTMLFormElement} formulario - El objeto form que contiene el ID del producto.
  */
 function addCart(formulario) {
+    alert("llega");
     // 1. Obtención de datos y ruta (solo el ID del producto)
     var idProducto = $(formulario).find('input[name="idProducto"]').val();
     var ruta = $(formulario).attr('action') || '/carrito/agregar'; // Lee la ruta del atributo 'action'
